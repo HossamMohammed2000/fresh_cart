@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  background-image: url("./assets/light-patten.svg");
+}
+
 .btn {
   @apply bg-[#4fa74f] text-white opacity-0 mt-6 w-3/4 cursor-pointer transition-all ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
   /* background-color: #4fa74f !important;

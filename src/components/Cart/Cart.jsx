@@ -34,7 +34,6 @@ function Cart() {
     let response = await deleteCartItem(id);
     // console.log(response.data.data);
     if (response.data.status == "success") {
-      
       setCartDetails(response.data.data);
       toast.success("product deleted");
     } else {
@@ -159,8 +158,11 @@ function Cart() {
                 ))}
               </tbody>
             </table>
-            <Link to="/checkout">
-              <button className="btn my-3">Checkout</button>
+            <Link
+              to="/checkout"
+              className="flex w-full items-center justify-center rounded-lg bg-emerald-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-emerald-800 focus:outline-none focus:ring-4 focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800"
+            >
+              Proceed to Checkout
             </Link>
           </div>
         </>

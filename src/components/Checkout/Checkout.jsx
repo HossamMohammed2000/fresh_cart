@@ -21,7 +21,7 @@ export default function Checkout() {
     setIsLoading(true);
     try {
       const options = {
-        url: `https://ecommerce.routemisr.com/api/v1/orders/${cartInfo.cartId}`,
+        url: `https://ecommerce.routemisr.com/api/v1/orders/${cartId}`,
         method: "POST",
         headers: {
           token: userLogin,
