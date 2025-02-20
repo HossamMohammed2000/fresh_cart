@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./Allorders.module.css";
 import axios from "axios";
-import jwtDecode from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 
 import { Link } from "react-router-dom";
 
