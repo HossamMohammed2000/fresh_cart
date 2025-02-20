@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./ResetPassword.module.css";
+import style from "./Resetpassword.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import * as Yup from "yup";
@@ -22,7 +22,7 @@ export default function ResetPassword() {
         method: "PUT",
         data: values,
       };
-      const {data} = await axios.request(options);
+      const { data } = await axios.request(options);
       setIsLoading(false);
       navigate("/login");
     } catch (err) {
