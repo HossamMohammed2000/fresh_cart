@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 React;
 style;
 function Cart() {
-  const {deleteCartItem,getLoggedUserCart,updateCartProductQuantity,setnumberItems,numberItems,addProductToCart}
-   = useContext(CartContext);
+  const { deleteCartItem, getLoggedUserCart, updateCartProductQuantity } =
+    useContext(CartContext);
   const [CartDetails, setCartDetails] = useState(null);
   async function getCartItems() {
     let response = await getLoggedUserCart();
     // console.log(response.data.data);
-    if (response.data.message == "success") {
+    if (response.data.status == "success") {
       setCartDetails(response.data.data);
     }
   }
@@ -34,7 +34,7 @@ function Cart() {
     let response = await deleteCartItem(id);
     // console.log(response.data.data);
     if (response.data.status == "success") {
-      setnumberItems(numberItems - 1);
+      
       setCartDetails(response.data.data);
       toast.success("product deleted");
     } else {

@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 .btn {
-  background-color: #4fa74f !important;
+  @apply bg-[#4fa74f] text-white opacity-0 mt-6 w-3/4 cursor-pointer transition-all ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
+  /* background-color: #4fa74f !important;
   color: #fff;
   transition: all 0.5s;
   transform: translateY(300px);
   opacity: 0;
   margin-top: 1.5rem !important;
   width: 75% !important;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 .row {
