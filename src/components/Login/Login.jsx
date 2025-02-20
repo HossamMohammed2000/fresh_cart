@@ -132,7 +132,7 @@ function Login() {
               </label>
             </div>
           </div>
-          <Link to={"/VerifyCode"} className="text-sm font-medium text-emerald-600 hover:underline dark:text-emerald-500">Forgot Password?</Link>
+          <Link to={"/forgotpassword"} className="text-sm font-medium text-emerald-600 hover:underline dark:text-emerald-500">Forgot Password?</Link>
         </div>
         <div className="flex gap-4 items-center">
           <button

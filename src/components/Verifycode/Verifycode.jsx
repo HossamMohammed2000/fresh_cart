@@ -23,7 +23,7 @@ function Verifycode() {
     const { data } = await axios.request(options);
     if (data.status === "success") {
       setLoading(false);
-      navigate("/Resetpassword");
+      navigate("/resetpassword");
       toast.success("Password reset successfully");
     }
   } catch (err) {
